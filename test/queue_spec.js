@@ -82,7 +82,7 @@ describe('Queue', () => {
         expect(queue.back.value).to.equal('A');
       });
 
-      it('Should reassign only the front pointer when new nodes are added to the back of the queue of size one or greater', () => {
+      it('Should reassign only the back pointer when new nodes are added to the back of the queue of size one or greater', () => {
         queue.enqueue('A');
         queue.enqueue('B');
         expect(queue.front.value).to.equal('A');
